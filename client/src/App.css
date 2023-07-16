@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form {
+  background-color: aliceblue;
+  width: 100%;
+  max-width: 36rem;
+  padding: 2rem 4rem;
+  border-radius: 5px;
+}
+
+.form .heading__primary {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.form .field-box:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.form .field-box label {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.form .field-box input {
+  margin-top: 0.8rem;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.form .join-btn {
+  font-size: 2rem;
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  outline-color: white;
+}
+
+.chat-footer {
+  display: flex;
+}
+
+.chat-footer .chat-input {
+  flex: 1;
+  margin-right: 0.8rem;
+}
+
+.chat-footer .chat-btn {
+  color: lightgreen;
+  background-color: #111111;
+  border: none;
+  padding: 0.6rem 0.4rem;
+  cursor: pointer;
+}
+
+.chat-window .chat-body {
+  height: calc(450px - (45px + 70px));
+  border: 1px solid #263238;
+  background: #fff;
+
+  position: relative;
+}
+.chat-window .chat-body .message-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-window .chat-body .message-container::-webkit-scrollbar {
+  display: none;
+}
+.chat-window .chat-body .message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.chat-window .chat-body .message .message-content {
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  max-width: 120px;
+  background-color: #43a047;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#you {
+  justify-content: flex-start;
+}
+
+#you .message-content {
+  justify-content: flex-start;
+}
+
+#you .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#other {
+  justify-content: flex-end;
+}
+
+#other .message-content {
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+}
+
+#other .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.chat-window .chat-body .message .message-meta {
+  display: flex;
+  font-size: 12px;
+}
